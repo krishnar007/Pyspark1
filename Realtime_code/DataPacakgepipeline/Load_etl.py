@@ -13,7 +13,7 @@ class Persist:
     def load_etl(self,df):
         try:
             print(" Extrenal data load sucessfully")
-            df.write.option("header", "true").mode("overwrite").csv("file:////Users/krishnar/PycharmProjects/SPARKSQL-TEST/json_data/DATASETS _2/RK_externaldata.csv")
+            df.write.option("header", "true").mode("overwrite").csv("file:////Users/PycharmProjects/SPARKSQL-TEST/json_data/DATASETS _2/externaldata.csv")
         except Exception as exp:
             print(" An Error occured in loading process" + str(exp))
             sys.exit(1)
